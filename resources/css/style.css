@@ -23,7 +23,7 @@ height: 30rem;
 .flex-container{
   display: flex;
     justify-content: flex-end;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 nav{
@@ -102,7 +102,7 @@ body {
 }
   .product-ruler,
   .product-truck{
-margin-left: 6rem;
+
 width: 5rem;
   }
 
@@ -143,7 +143,7 @@ footer .media{
   display: none;
 }
 
-@media only screen and (max-width: 725.333px){
+@media only screen and (max-width: 960px){
 
 header {
   height: 22rem;
@@ -155,17 +155,23 @@ nav{
 }
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 .text-box{
   padding: 0.75rem 4rem;
   margin-top: 5rem;
   margin-right: 2rem;
-  font-size: 1.33rem;
+
+}
+
+h1{
+    font-size: 1.33rem;
 }
 
 .menu-2{
   display: none;
 }
+
 footer .media{
   display: none;
 }
@@ -180,15 +186,23 @@ header{
 
   .container{
     width: 100%;
+    margin: 0 auto;
   }
 
   .text-box{
     margin: 1rem 0;
     margin-top: 9rem;
+
+  }
+
+  h1{
     font-size: 1rem;
     text-align: center;
   }
-
+section{
+  display: flex;
+  flex-direction: column;
+}
   .product-image{
     margin:3.77rem 0;
     font-family: Helvetica;
@@ -200,6 +214,12 @@ header{
 
 .menu {
   display: none;
+}
+
+.menu-2 {
+  padding: 1rem 2rem;
+  list-style: none;
+
 }
  footer div {
    display:none;

@@ -20,6 +20,10 @@ padding-top: 1rem;
 height: 30rem;
 }
 
+.flex-container{
+  display: flex;
+    justify-content: flex-end;
+}
 nav{
   background-color: cadetblue;
   color: white;
@@ -46,6 +50,14 @@ header img{
   padding: 1rem 2rem;
   list-style: none;
   display: inline;
+}
+
+.menu-2{
+  display: none;
+}
+
+.supporting{
+  display: flex;
 }
 
 .text-box{
@@ -124,11 +136,70 @@ footer img {
   margin-right: 1rem;
   margin-left: 2rem;
 }
-
-@media only screen and (max-width){
-
+footer .media{
+  display: none;
 }
 
-@media only screen and (max-width){
-  
+@media only screen and (max-width: 725.333px){
+
+header {
+  height: 22rem;
+  padding-top: 0;
+}
+
+nav{
+  position: absolute;
+}
+.container {
+  width: 100%;
+}
+.text-box{
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+  font-size: 1.33rem;
+}
+
+.menu-2{
+  display: none;
+}
+footer .media{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 373px){
+
+header{
+  background-position: 20%;
+  padding-top: 0;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  .text-box{
+    margin: 1rem 0;
+    margin-top: 9rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .product-image{
+    margin:3.77rem 0;
+    font-family: Helvetica;
+    Font-size: 0.77rem;
+  }
+.product-truck{
+  margin-top: 1.54rem;
+}
+
+.menu {
+  display: none;
+}
+ footer div {
+   display:none;
+ }
+ }
 }

@@ -4,13 +4,19 @@ line-height: 1.4;
 font-family: Helvetica;
 }
 
-img {
-  border-style: none;
-}
+/*Parent Divs*/
+
 .container{
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
 }
+
+.supporting{
+display: flex;
+justify-content: center;
+  }
+
+/* Header */
 header{
   background-image: url("../css/glasses-bg.png");
   background-repeat: no-repeat;
@@ -26,15 +32,19 @@ height: 30rem;
     max-width: 960px;
     margin: 0 auto;
 }
-nav{
-  background-color: cadetblue;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
 
+nav{
+padding: 1rem 0;
+background-color: cadetblue;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
 }
 
 nav .container{
@@ -42,6 +52,7 @@ nav .container{
   margin-left: 2rem;
 
 }
+
 header img{
   padding-left: 2rem;
   padding-right: 1rem;
@@ -54,12 +65,12 @@ header img{
   display: inline;
 }
 
-.menu-2{
-  display: none;
+li {
+  margin-right: 1rem;
 }
 
-.supporting{
-  display: flex;
+.menu-2{
+  display: none;
 }
 
 .text-box{
@@ -75,10 +86,7 @@ header img{
     line-height: 1.2;
   }
 
-.supporting{
-  display: flex;
-justify-content: center;
-  }
+/*Images*/
 
 .product-image {
   display: flex;
@@ -95,14 +103,13 @@ justify-content: center;
 body {
     line-height: 1.4rem;
 }
-      }
 
 .product{
   width: 3.5rem;
 }
-  .product-ruler,
-  .product-truck{
 
+.product-ruler,
+.product-truck{
 width: 5rem;
   }
 
@@ -127,6 +134,8 @@ display: inline-block;
     padding: 1rem 0;
   }
 
+/*Footer*/
+
 footer {
   background-color: azure;
 display: flex;
@@ -147,18 +156,15 @@ footer .media{
 
 header {
   height: 22rem;
-  padding-top: 0;
-}
+  }
 
-nav{
-  position: absolute;
-}
 .container {
   width: 100%;
   margin: 0 auto;
 }
+
 .text-box{
-  padding: 0.75rem 4rem;
+  margin: 0.75rem 4rem;
   margin-top: 5rem;
   margin-right: 2rem;
 
@@ -177,11 +183,11 @@ footer .media{
 }
 }
 
-@media only screen and (max-width: 373px){
+@media only screen and (max-width: 540px){
 
 header{
   background-position: 20%;
-  padding-top: 0;
+  height: 17rem;
   }
 
   .container{
@@ -190,7 +196,7 @@ header{
   }
 
   .text-box{
-    margin: 1rem 0;
+    padding: 1rem 0;
     margin-top: 9rem;
 
   }
@@ -199,16 +205,21 @@ header{
     font-size: 1rem;
     text-align: center;
   }
+
 section{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
+
   .product-image{
-    margin:3.77rem 0;
+    margin: 3.77rem 0;
     font-family: Helvetica;
     Font-size: 0.77rem;
   }
-.product-truck{
+
+.product-truck,
+.product-ruler{
   margin-top: 1.54rem;
 }
 
